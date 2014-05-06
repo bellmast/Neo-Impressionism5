@@ -85,8 +85,8 @@ function drawCanvas() {
                 floorAdd4 = 25 - newS2
                 newS2 += floorAdd4
             }
-            compH = HueShift(newH, newS)
-            compGlow = new HSLColour(compH, newS, newL)
+            compH = HueShift(newH2, newS2)
+            compGlow = new HSLColour(compH, newS2, newL2)
             filler = new HSLColour(newH, newS, newL)
             filler2 = new HSLColour(newH2, newS2, newL2)
             rgb = filler.getRGB()
@@ -107,8 +107,8 @@ function drawCanvas() {
             paper4.rect(i, h, 6, 12).attr({fill:filler2, stroke:"none"})
             paper5.circle(i+6, h+6, 3).attr({fill:filler, stroke:"none"})
             paper5.circle(i+6, h+12, 3).attr({fill:filler, stroke:"none"})
-            paper6.circle(i+6, h+6, 3).attr({fill:filler, stroke:"none"}).glow({width:1, color:fillerComp})
-            paper6.circle(i+6, h+12, 3).attr({fill:filler, stroke:"none"}).glow({width:1, color:fillerComp})
+            paper6.circle(i+6, h+6, 3).attr({fill:filler2, stroke:"none"}).glow({width:1, color:fillerComp})
+            paper6.circle(i+6, h+12, 3).attr({fill:filler2, stroke:"none"}).glow({width:1, color:fillerComp})
 
 
             //
