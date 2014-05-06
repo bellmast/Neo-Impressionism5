@@ -10,8 +10,8 @@ function runProgram() {
         context = canvas.getContext("2d");
         img = document.getElementById('originalImage');
         context.drawImage(img, 0, 0)
-        canvasWidth = 600;
-        canvasHeight = 600;
+        canvasWidth = 914;
+        canvasHeight = 717;
         
 
         
